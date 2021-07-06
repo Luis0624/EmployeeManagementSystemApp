@@ -6,10 +6,10 @@ const internQuestions = require("./src/internQuestions.js");
 const menu = require("./src/menu.js");
 
 // Objects
-const Manager = require("./lib/manager");
-const Engineer = require("./lib/engineer");
-const Intern = require("./lib/intern");
-const Employee = require("./lib/employee");
+const Manager = require("./lib/Manager");
+const Engineer = require("./lib/Engineer");
+const Intern = require("./lib/Intern");
+const Employee = require("./lib/Employee");
 
 // HTML Rendering
 const htmlTemplate = require("./profileTemplate");
@@ -40,7 +40,7 @@ function init() {
       // Initiate create Engineer/Intern based on input
       if (answer.what == "Add an engineer") {
         engineerQuestion();
-      } else if (answer.what == "Add an intern") {
+      } else if (answer.what == "Add an Intern") {
         internQuestion();
         // If finish is selected, call renderHTML function
       } else {

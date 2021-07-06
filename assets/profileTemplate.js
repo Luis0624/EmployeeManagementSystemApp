@@ -12,11 +12,11 @@ function renderHTML(teamArray) {
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <link rel="stylesheet" href="style.css" />
-            <title>Team Roster</title>
+            <title>Team Profile</title>
         </head>
         <body>
             <header>
-                <h1>Team Roster</h1>
+                <h1>Team Profile</h1>
             </header>
             <main>`;
 
@@ -79,7 +79,7 @@ function getOther(employee) {
 }
 
 function generateMainHtml(HTML) {
-  console.log("4 - Finishing your website!");
+  console.log("Finishing your website!");
   fs.mkdir(OUTPUT_DIR, { recursive: true }, (err) => {
     err ? console.error(err) : process.chdir(OUTPUT_DIR);
     fs.writeFileSync("generatedTeamProfile.html", HTML);
